@@ -3,552 +3,363 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>貓奴必備！貓咪居家避雷安全圖鑑 🌿🐾 | 守護主子健康</title>
+  <meta name="description" content="30 秒查清家居消毒清潔劑有沒有貓咪家庭應提高警覺的成分，並了解 SmellGREEN 日常家居清潔消毒方案的正確使用方法。">
+  <title>貓奴快速檢查表｜家居消毒劑會唔會傷貓？</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#F4F8F5',
-              100: '#E6F0E9',
-              200: '#CCE2D3',
-              500: '#407B59',
-              600: '#346649',
-              700: '#285139',
-              800: '#1f3c1b'
-            },
-            warm: {
-              50: '#FAF8F5',
-              100: '#F4EFE6',
-              200: '#E8DEC8',
-              500: '#C68B59',
-              600: '#A96B3A',
-              700: '#85532D'
-            },
-            coral: {
-              50: '#FFF5F5',
-              100: '#FED7D7',
-              500: '#E53E3E',
-              600: '#C53030',
-              700: '#9B2C2C'
-            }
+            forest: '#1f3c1b',
+            leaf: '#8bc34a',
+            cream: '#fbfaf6'
           },
           fontFamily: {
             sans: ['"PingFang HK"', '"Noto Sans HK"', '"Microsoft JhengHei"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 12px 40px rgba(31, 60, 27, .12)'
           }
         }
       }
     }
   </script>
+
   <style>
-    html {
-      scroll-behavior: smooth;
-      background-color: #FAF8F5;
-      color: #2D3748;
+    html { scroll-behavior: smooth; }
+    body { background: #fbfaf6; }
+    .pattern-dot {
+      background-image: radial-gradient(rgba(139,195,74,.24) 1.2px, transparent 1.2px);
+      background-size: 16px 16px;
     }
-    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
-    .custom-scrollbar::-webkit-scrollbar-track { background: #F4EFE6; border-radius: 9999px; }
-    .custom-scrollbar::-webkit-scrollbar-thumb { background: #CCE2D3; border-radius: 9999px; }
-    .badge-pulse { animation: pulse-gentle 2s infinite ease-in-out; }
-    @keyframes pulse-gentle {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.03); }
-    }
+    .check-card:hover { transform: translateY(-4px); }
+    .faq-answer { display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-plus { transform: rotate(45deg); }
   </style>
 </head>
-<body class="font-sans antialiased text-gray-800 bg-warm-50 min-h-screen flex flex-col selection:bg-brand-100 selection:text-brand-700">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-brand-500 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm">
-    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
-      <span>🐱 貓咪居家避雷＋長壽生活守則：減少隱形風險，守護主子健康。</span>
-    </div>
+<body class="font-sans antialiased text-slate-800">
+  <!-- Announcement -->
+  <div class="bg-forest text-white px-4 py-2 text-center text-xs sm:text-sm font-medium">
+    貓咪家庭日常消毒：先看成分，再按產品指示使用，並讓表面完全風乾後才讓主子接觸。
   </div>
 
-  <!-- Header / Navigation -->
-  <header class="bg-white/80 backdrop-blur-md border-b border-warm-100 sticky top-0 z-30 transition-all">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-3">
-      <div class="flex items-center gap-2.5 min-w-0">
-        <div class="w-10 h-10 rounded-full shrink-0 overflow-hidden border-2 border-brand-100 bg-white shadow-inner">
-          <img
-            src="Mao-Li-La-Geng-Moolilakang_Profile-Pic-2.jpg"
-            alt="毛厘啦更 Moolilakang"
-            class="w-full h-full object-cover"
-          >
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <a href="#top" class="flex min-w-0 items-center gap-2.5" aria-label="返回頁首">
+        <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-[#dceccf] bg-white shadow-sm">
+          <img src="Mao-Li-La-Geng-Moolilakang_Profile-Pic-2.jpg" alt="毛厘啦更 Moolilakang" class="h-full w-full object-cover">
         </div>
         <div class="min-w-0">
-          <span class="text-xs font-semibold text-brand-600 tracking-wider uppercase block">Moolilagang 知識庫</span>
-          <h1 class="text-lg sm:text-xl font-bold text-gray-800 leading-tight truncate">貓咪居家避雷安全圖鑑</h1>
+          <p class="text-[11px] font-bold tracking-wider text-[#5c8738]">MOOLILAGANG × GREENSTORE HK</p>
+          <p class="truncate text-sm font-extrabold text-slate-800 sm:text-base">貓奴快速檢查表</p>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center gap-2 shrink-0">
-        <button onclick="toggleAuditModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded-full bg-warm-100 hover:bg-warm-200 text-warm-700 transition">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-          <span class="hidden sm:inline">家居安全</span>速測
-        </button>
-
-        <!-- Keep original header CTA wording -->
-        <a href="#cta-section" class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded-full bg-brand-500 hover:bg-brand-600 text-white shadow-sm transition">
-          <span>天然清潔專區</span>
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-        </a>
-      </div>
+      <a
+        href="https://greenstore.hk/collections/natural-cleaner/products/smellgreen-natural-disinfectant-spray?utm_source=instagram&utm_medium=organic_social&utm_campaign=cat_toxic_cleaner_reels&utm_content=cat_safety_landing"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 rounded-full bg-[#407b59] px-3.5 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-forest sm:px-5 sm:text-sm"
+      >
+        天然清潔專區
+      </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative overflow-hidden pt-8 pb-10 px-4 sm:px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-warm-100 text-warm-700 text-xs sm:text-sm font-medium mb-4 shadow-sm border border-warm-200">
-        <span>🐾 貓咪居家避雷 × 長壽生活守則</span>
-      </div>
+  <main id="top">
+    <!-- Hero: answer first, tool second -->
+    <section class="relative overflow-hidden border-b border-[#e5efd9] bg-gradient-to-br from-[#f8fcef] via-white to-[#e9f4dc]">
+      <div class="pointer-events-none absolute -left-12 -top-14 h-52 w-52 rounded-full bg-[#d9edc2]/70 blur-2xl"></div>
+      <div class="pointer-events-none absolute right-0 top-0 h-full w-2/5 opacity-50 pattern-dot"></div>
 
-      <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight leading-snug mb-3">
-        屋企有貓？<br class="sm:hidden"><span class="text-brand-600">有毒植物、危險氣味、清潔劑、食物與飲品</span> 都要避開！
-      </h2>
+      <div class="relative mx-auto grid max-w-6xl items-center gap-8 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[1.04fr_.96fr] lg:py-16">
+        <div class="relative z-10">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#d5eac0] bg-white/80 px-3 py-1.5 text-xs font-bold text-[#4d7530] shadow-sm">
+            <span>🐾</span>
+            <span>貓奴快速檢查表</span>
+          </div>
 
-      <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
-        想主子健康長壽，第一步不是買更多補充品，而是減少每日接觸的「隱形風險」。貓咪對部分化學物、精油及人類食物的代謝能力有限；未乾的消毒水、濃烈香精、一口朱古力、洋蔥蒜蓉、咖啡或酒精，都可能為肝腎、呼吸道、神經系統及紅血球帶來負擔。即刻查閱貓咪居家避雷與長壽守護清單！
-      </p>
+          <h1 class="max-w-3xl text-3xl font-black leading-[1.22] tracking-tight text-[#173312] sm:text-4xl lg:text-5xl">
+            你屋企支消毒劑，<br>
+            貓咪踩到再舔腳會唔會有風險？
+          </h1>
 
-      <div class="bg-coral-50 border border-coral-100 rounded-2xl p-4 sm:p-5 max-w-2xl mx-auto text-left flex items-start gap-3.5 shadow-sm">
-        <div class="w-8 h-8 rounded-xl bg-coral-100 text-coral-600 flex items-center justify-center shrink-0 mt-0.5">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          <p class="mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+            先查 5 類常見高風險成分，再睇一個可用於日常家居、寵物用品和地板的替代方案。所有清潔後表面都應完全風乾，先畀貓咪接觸。
+          </p>
+
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="https://greenstore.hk/collections/natural-cleaner/products/smellgreen-natural-disinfectant-spray?utm_source=instagram&utm_medium=organic_social&utm_campaign=cat_toxic_cleaner_reels&utm_content=cat_safety_landing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#1f3c1b] px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-[#1f3c1b]/20 transition hover:-translate-y-0.5 hover:bg-[#315d2c]"
+            >
+              <span>立即查看安全替代方案</span>
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M4 12h16"/></svg>
+            </a>
+
+            <a href="#quick-check" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-[#bbd997] bg-white px-6 py-4 text-sm font-bold text-[#315d2c] transition hover:bg-[#f4faec]">
+              <span>先查我屋企清潔劑成分</span>
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+          </div>
+
+          <div class="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs font-medium text-slate-600">
+            <span class="inline-flex items-center gap-1.5"><span class="text-[#5f9637]">✓</span> 30 秒自我檢查</span>
+            <span class="inline-flex items-center gap-1.5"><span class="text-[#5f9637]">✓</span> 成分關鍵字一眼識別</span>
+            <span class="inline-flex items-center gap-1.5"><span class="text-[#5f9637]">✓</span> 清潔後必須完全風乾</span>
+          </div>
         </div>
-        <div class="text-xs sm:text-sm">
-          <span class="font-bold text-coral-700 block mb-0.5">🚨 懷疑主子誤食或接觸有毒物質？</span>
-          <p class="text-gray-600 leading-normal">切勿自行灌水或催吐！請立即拍照記錄涉事植物、食物、飲品或清潔劑成分標籤，並盡快帶同樣本前往就近 24 小時獸醫診所求醫。</p>
+
+        <div class="relative">
+          <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-[#dcefc8] to-[#8bc34a]/30 blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-[1.75rem] border border-white bg-white p-2 shadow-soft">
+            <img
+              src="SmellGreen_Natural_Cleaner_Cat-friendly.jpg"
+              alt="SmellGREEN 天然家居清潔消毒劑與在家中活動的貓咪"
+              class="h-auto w-full rounded-[1.35rem] object-cover"
+            >
+          </div>
+          <div class="absolute -bottom-3 left-4 right-4 rounded-2xl border border-[#dceacb] bg-white/95 px-4 py-3 shadow-lg backdrop-blur-sm sm:left-7 sm:right-7">
+            <p class="text-xs font-extrabold text-[#315d2c]">日常安全使用重點</p>
+            <p class="mt-0.5 text-xs leading-5 text-slate-600">噴灑／清潔後，必須待表面完全風乾，才讓貓咪踩踏、舔毛或接觸物件。</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Main Interactive Section -->
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 flex-1 w-full">
-    <div class="bg-white rounded-3xl p-4 sm:p-6 shadow-sm border border-warm-100 mb-8">
-      <div class="relative mb-5">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="搜尋植物、清潔成分、食物或症狀（例如：百合、洋蔥、朱古力、漂白水、茶樹油）..."
-          class="w-full pl-11 pr-10 py-3 rounded-2xl bg-warm-50 border border-warm-200 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm transition"
-          oninput="handleSearch(this.value)"
+    <!-- Risk-label quick check -->
+    <section id="quick-check" class="scroll-mt-24 px-4 py-12 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-xs font-extrabold tracking-[.16em] text-[#648f3d]">15-SECOND LABEL CHECK</p>
+          <h2 class="mt-2 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">先睇成分標籤：見到以下字眼，貓咪家庭要提高警覺</h2>
+          <p class="mt-3 text-sm leading-6 text-slate-600">這不是完整毒物百科；只保留 Reels 觀眾最需要的 5 個清潔成分關鍵字和下一步行動。</p>
+        </div>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <article class="check-card flex flex-col overflow-hidden rounded-3xl border border-red-100 bg-white shadow-sm transition duration-200">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRbZ_4uXwrQtyPnwsVbuGxY31BMLP2NuvFcO8ML9V-Gnej06tAR_4263WKxSGQzcIlOzw2E1QnwYs1ZPUO2cWmoGXF8W_qA6mlZbD7NAuSaGV6Gorh5bOl4SyY" alt="漂白水或次氯酸鈉產品示意" class="h-28 w-full object-cover" loading="lazy">
+            <div class="flex flex-1 flex-col p-4">
+              <span class="mb-2 inline-flex w-fit rounded-full bg-red-50 px-2 py-1 text-[11px] font-bold text-red-700">提高警覺</span>
+              <h3 class="text-base font-extrabold leading-snug text-slate-900">漂白水／次氯酸鈉</h3>
+              <p class="mt-2 text-xs leading-5 text-slate-600">刺激性及殘留接觸風險。</p>
+              <p class="mt-3 text-xs font-bold leading-5 text-[#9a3412]">建議：不作貓常接觸地面日常噴灑。</p>
+            </div>
+          </article>
+
+          <article class="check-card flex flex-col overflow-hidden rounded-3xl border border-orange-100 bg-white shadow-sm transition duration-200">
+            <img src="https://foodpanda.dhmedia.io/image/darkstores/nv-global-catalog/hk/31189a49-c906-40b5-882e-23fca11d307e.jpg?height=480" alt="苯扎氯銨 BKC 或季銨鹽產品示意" class="h-28 w-full object-cover" loading="lazy">
+            <div class="flex flex-1 flex-col p-4">
+              <span class="mb-2 inline-flex w-fit rounded-full bg-orange-50 px-2 py-1 text-[11px] font-bold text-orange-700">提高警覺</span>
+              <h3 class="text-base font-extrabold leading-snug text-slate-900">苯扎氯銨（BKC）／QUATs</h3>
+              <p class="mt-2 text-xs leading-5 text-slate-600">常見於消毒噴霧、濕紙巾。</p>
+              <p class="mt-3 text-xs font-bold leading-5 text-[#9a3412]">建議：避免讓貓接觸未乾表面。</p>
+            </div>
+          </article>
+
+          <article class="check-card flex flex-col overflow-hidden rounded-3xl border border-amber-100 bg-white shadow-sm transition duration-200">
+            <img src="https://medias.pns.hk/publishing/PNSHK-417504-front-thumbnail.jpg?version=1732905298" alt="酚類或 PCMX 消毒產品示意" class="h-28 w-full object-cover" loading="lazy">
+            <div class="flex flex-1 flex-col p-4">
+              <span class="mb-2 inline-flex w-fit rounded-full bg-amber-50 px-2 py-1 text-[11px] font-bold text-amber-700">提高警覺</span>
+              <h3 class="text-base font-extrabold leading-snug text-slate-900">酚類／PCMX</h3>
+              <p class="mt-2 text-xs leading-5 text-slate-600">部分傳統消毒產品常見。</p>
+              <p class="mt-3 text-xs font-bold leading-5 text-[#9a3412]">建議：貓家庭不作首選。</p>
+            </div>
+          </article>
+
+          <article class="check-card flex flex-col overflow-hidden rounded-3xl border border-sky-100 bg-white shadow-sm transition duration-200">
+            <img src="https://img.rtacdn-os.com/20250409/d33b966a-decd-367f-ac16-f8a5c6cfc578" alt="阿摩尼亞或氫氧化氨清潔產品示意" class="h-28 w-full object-cover" loading="lazy">
+            <div class="flex flex-1 flex-col p-4">
+              <span class="mb-2 inline-flex w-fit rounded-full bg-sky-50 px-2 py-1 text-[11px] font-bold text-sky-700">提高警覺</span>
+              <h3 class="text-base font-extrabold leading-snug text-slate-900">阿摩尼亞／氫氧化氨</h3>
+              <p class="mt-2 text-xs leading-5 text-slate-600">氣味及呼吸道刺激問題。</p>
+              <p class="mt-3 text-xs font-bold leading-5 text-[#075985]">建議：避免密閉空間使用。</p>
+            </div>
+          </article>
+
+          <article class="check-card flex flex-col overflow-hidden rounded-3xl border border-fuchsia-100 bg-white shadow-sm transition duration-200">
+            <img src="https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/hk/zh-hk/products/magiclean/mcl_floor_04.jpg?fit=fit%2C1&wid=640" alt="人工合成香精或香氛地板清潔產品示意" class="h-28 w-full object-cover" loading="lazy">
+            <div class="flex flex-1 flex-col p-4">
+              <span class="mb-2 inline-flex w-fit rounded-full bg-fuchsia-50 px-2 py-1 text-[11px] font-bold text-fuchsia-700">提高警覺</span>
+              <h3 class="text-base font-extrabold leading-snug text-slate-900">人工合成香精／鄰苯二甲酸酯</h3>
+              <p class="mt-2 text-xs leading-5 text-slate-600">貓對濃烈氣味較敏感。</p>
+              <p class="mt-3 text-xs font-bold leading-5 text-[#86198f]">建議：不要以「香」當作「乾淨」。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-4 rounded-3xl border border-[#dceccf] bg-[#f3faea] px-5 py-5 text-center sm:flex-row sm:text-left">
+          <div>
+            <p class="font-extrabold text-[#1f3c1b]">見到上述成分？下一步不是停止清潔。</p>
+            <p class="mt-1 text-sm text-slate-600">轉用成分與使用步驟清楚的日常方案，並堅持「完全風乾後再讓主子接觸」。</p>
+          </div>
+          <a href="#solution" class="shrink-0 rounded-xl bg-[#1f3c1b] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#315d2c]">查看替代方案</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete offer / solution -->
+    <section id="solution" class="scroll-mt-24 bg-[#1f3c1b] px-4 py-12 sm:px-6 sm:py-16">
+      <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_.96fr] lg:items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold text-[#e3f5d1]">
+            <span>🌿</span>
+            <span>貓咪家庭日常消毒方案</span>
+          </div>
+
+          <h2 class="mt-4 text-3xl font-black leading-tight text-white sm:text-4xl">唔使為消毒而逼主子聞刺鼻化學味</h2>
+          <p class="mt-4 max-w-xl text-sm leading-7 text-white/80 sm:text-base">
+            如果你已經檢查到屋企常用產品含有漂白水、季銨鹽、酚類、阿摩尼亞或濃烈香精，下一步不是不清潔，而是換成一個適合每日用、成分與使用方法更清楚的方案。
+          </p>
+
+          <div class="mt-7 rounded-3xl border border-white/15 bg-white/10 p-5 sm:p-6">
+            <h3 class="text-xl font-extrabold text-white">SmellGREEN 天然家居清潔消毒劑</h3>
+            <ul class="mt-4 space-y-3 text-sm leading-6 text-white/85">
+              <li class="flex gap-3"><span class="font-bold text-[#b9e486]">✓</span><span>植物來源 <strong class="font-bold text-white">Thymol 0.23%</strong> 配方。</span></li>
+              <li class="flex gap-3"><span class="font-bold text-[#b9e486]">✓</span><span>產品頁標示不含酒精、氯、阿摩尼亞、酚類、樟腦、萘及除蟲菊酯。</span></li>
+              <li class="flex gap-3"><span class="font-bold text-[#b9e486]">✓</span><span>一支做到清潔、除臭及消毒；免稀釋，可用於家居高接觸表面及寵物用品。</span></li>
+              <li class="flex gap-3"><span class="font-bold text-[#b9e486]">✓</span><span>產品頁列有 US EPA、Health Canada、HKSTC、UL EcoLogo 及 NSF 等認證／註冊資料。</span></li>
+              <li class="flex gap-3"><span class="font-bold text-[#b9e486]">✓</span><span>提供 40mL 套裝、200mL 及 1 Gallon（3.8L）選擇。</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] bg-white p-5 shadow-2xl sm:p-7">
+          <div class="flex items-center gap-3">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#eaf6dc] text-xl">🧽</div>
+            <div>
+              <p class="text-xs font-bold tracking-wider text-[#648f3d]">LOW-FRICTION ROUTINE</p>
+              <h3 class="text-xl font-black text-slate-900">3 步安全使用法</h3>
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-4">
+            <div class="flex gap-4 rounded-2xl bg-[#f7fbf2] p-4">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1f3c1b] text-sm font-black text-white">1</span>
+              <div><h4 class="font-extrabold text-slate-900">直接噴在表面</h4><p class="mt-1 text-sm leading-6 text-slate-600">免稀釋。按需要噴灑在硬表面、常接觸物件或寵物用品表面。</p></div>
+            </div>
+            <div class="flex gap-4 rounded-2xl bg-[#f7fbf2] p-4">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1f3c1b] text-sm font-black text-white">2</span>
+              <div><h4 class="font-extrabold text-slate-900">如需消毒，保持表面濕潤</h4><p class="mt-1 text-sm leading-6 text-slate-600">按產品標示的用途與接觸時間操作；不要自行縮短產品所需的濕潤時間。</p></div>
+            </div>
+            <div class="flex gap-4 rounded-2xl bg-[#f7fbf2] p-4">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1f3c1b] text-sm font-black text-white">3</span>
+              <div><h4 class="font-extrabold text-slate-900">完全風乾後，才讓主子接觸</h4><p class="mt-1 text-sm leading-6 text-slate-600">貓咪可在表面乾透後如常活動；避免讓幼兒或寵物接觸仍然濕潤的表面。</p></div>
+            </div>
+          </div>
+
+          <a
+            href="https://greenstore.hk/collections/natural-cleaner/products/smellgreen-natural-disinfectant-spray?utm_source=instagram&utm_medium=organic_social&utm_campaign=cat_toxic_cleaner_reels&utm_content=cat_safety_landing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#8bc34a] px-5 py-4 text-center text-sm font-black text-[#173312] shadow-lg shadow-[#8bc34a]/25 transition hover:-translate-y-0.5 hover:bg-[#a2d563]"
+          >
+            <span>為貓咪家庭換走高風險消毒劑</span>
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M4 12h16"/></svg>
+          </a>
+          <p class="mt-3 text-center text-xs leading-5 text-slate-500">香港現貨｜40mL 套裝、200mL、1 Gallon 選擇｜實際售價、優惠及庫存請以產品頁為準。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust and usage boundary -->
+    <section class="px-4 py-12 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
+            <div class="text-2xl">🔎</div>
+            <h3 class="mt-3 text-lg font-extrabold text-slate-900">用具體成分說話</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">不是把「天然」等同「零風險」。產品有效成分為 Thymol 0.23%，應按標示用途與使用方法操作。</p>
+          </div>
+          <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
+            <div class="text-2xl">🫧</div>
+            <h3 class="mt-3 text-lg font-extrabold text-slate-900">清潔與消毒，步驟清楚</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">清潔時噴灑並擦拭；如需消毒，按產品指示讓表面保持濕潤，再讓它風乾或依指示擦拭。</p>
+          </div>
+          <div class="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
+            <div class="text-2xl">🐱</div>
+            <h3 class="mt-3 text-lg font-extrabold text-slate-900">貓咪接觸前，先等乾</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">產品不可吞食。任何清潔用品使用後，都應避免寵物接觸仍濕的地面、玩具、食具或其他物件。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[#f0f8e7] px-4 py-12 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-3xl">
+        <div class="text-center">
+          <p class="text-xs font-extrabold tracking-[.16em] text-[#648f3d]">FAQ</p>
+          <h2 class="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">貓奴最常問的 3 條問題</h2>
+        </div>
+
+        <div class="mt-7 space-y-3">
+          <article class="faq-item rounded-2xl border border-[#d9eac9] bg-white">
+            <button class="flex w-full items-center justify-between gap-4 px-5 py-5 text-left" onclick="toggleFaq(this)">
+              <span class="font-extrabold text-slate-900">Thymol 是甚麼？</span>
+              <span class="faq-plus text-2xl leading-none text-[#5b8737] transition">+</span>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-sm leading-7 text-slate-600">Thymol 是此產品頁列出的有效成分，濃度為 0.23%。它不是「完全無精油」或「絕對零風險」的意思；請按產品標示使用，避免吞食，並在清潔後讓表面完全風乾才讓貓咪接觸。</div>
+          </article>
+
+          <article class="faq-item rounded-2xl border border-[#d9eac9] bg-white">
+            <button class="flex w-full items-center justify-between gap-4 px-5 py-5 text-left" onclick="toggleFaq(this)">
+              <span class="font-extrabold text-slate-900">可否噴在貓碗／貓砂盆旁？</span>
+              <span class="faq-plus text-2xl leading-none text-[#5b8737] transition">+</span>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-sm leading-7 text-slate-600">請以產品標示的適用表面與使用方式為準。處理貓碗、食具或貓砂盆周邊時，避免讓產品殘留於食物、飲水或仍濕的表面；按指示清潔並確保表面完全乾透後才讓貓咪使用。</div>
+          </article>
+
+          <article class="faq-item rounded-2xl border border-[#d9eac9] bg-white">
+            <button class="flex w-full items-center justify-between gap-4 px-5 py-5 text-left" onclick="toggleFaq(this)">
+              <span class="font-extrabold text-slate-900">噴完幾時可讓貓接觸？</span>
+              <span class="faq-plus text-2xl leading-none text-[#5b8737] transition">+</span>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-sm leading-7 text-slate-600">完成產品指示的使用步驟後，等待表面完全風乾才讓貓咪踩踏、舔毛或接觸物件。若出現異常接觸、誤食或不適，請立即聯絡獸醫並帶同產品標籤／資料求助。</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="px-4 py-12 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#1f3c1b] to-[#6faa3d] px-6 py-10 text-center shadow-xl sm:px-12 sm:py-12">
+        <p class="text-sm font-bold text-[#d9f2bd]">先避開常見高風險成分，再建立正確的日常清潔習慣</p>
+        <h2 class="mx-auto mt-2 max-w-3xl text-2xl font-black leading-tight text-white sm:text-4xl">為主子打造一個乾淨、低刺激、可以放心活動的家</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white/85">選擇配方與使用步驟清楚的產品，並把「完全風乾後才讓貓接觸」變成每次清潔後的固定習慣。</p>
+        <a
+          href="https://greenstore.hk/collections/natural-cleaner/products/smellgreen-natural-disinfectant-spray?utm_source=instagram&utm_medium=organic_social&utm_campaign=cat_toxic_cleaner_reels&utm_content=cat_safety_landing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-7 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-black text-[#1f3c1b] shadow-lg transition hover:-translate-y-0.5 hover:bg-[#f4faec]"
         >
-        <div class="absolute left-4 top-3.5 text-gray-400">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </div>
-        <button id="clearSearchBtn" onclick="clearSearch()" class="absolute right-3 top-3 text-gray-400 hover:text-gray-600 p-1 hidden">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
+          <span>立即查看安全替代方案</span>
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M4 12h16"/></svg>
+        </a>
       </div>
-
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <!-- Reordered Category Tabs: cleaner + safe first; all last -->
-        <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 sm:pb-0 custom-scrollbar">
-          <button onclick="setCategory('cleaner')" data-cat="cleaner" class="filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium text-gray-600 hover:bg-warm-100 transition whitespace-nowrap">
-            🧪 有害清潔成分 (<span id="count-cleaner">0</span>)
-          </button>
-          <button onclick="setCategory('safe')" data-cat="safe" class="filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium text-gray-600 hover:bg-warm-100 transition whitespace-nowrap">
-            🌿 貓咪安全替代 (<span id="count-safe">0</span>)
-          </button>
-          <button onclick="setCategory('plant')" data-cat="plant" class="filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium text-gray-600 hover:bg-warm-100 transition whitespace-nowrap">
-            🪴 有毒植物 (<span id="count-plant">0</span>)
-          </button>
-          <button onclick="setCategory('scent')" data-cat="scent" class="filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium text-gray-600 hover:bg-warm-100 transition whitespace-nowrap">
-            🌸 危險氣味/精油 (<span id="count-scent">0</span>)
-          </button>
-          <button onclick="setCategory('food')" data-cat="food" class="filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium text-gray-600 hover:bg-warm-100 transition whitespace-nowrap">
-            🍫 禁忌食物/飲品 (<span id="count-food">0</span>)
-          </button>
-          <button onclick="setCategory('all')" data-cat="all" class="filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition whitespace-nowrap bg-brand-500 text-white shadow-sm">
-            全部 (<span id="count-all">0</span>)
-          </button>
-        </div>
-
-        <div class="flex items-center gap-2 text-xs">
-          <span class="text-gray-600 font-medium shrink-0">危險等級：</span>
-          <select id="dangerFilter" onchange="handleDangerChange(this.value)" class="bg-warm-50 border border-warm-200 rounded-xl px-2.5 py-1.5 text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
-            <option value="all">全部等級</option>
-            <option value="fatal">🚨 致命 / 極度危險</option>
-            <option value="high">⚠️ 中高風險 / 器官受損</option>
-            <option value="caution">⚡ 刺激性 / 避免接觸</option>
-            <option value="safe">✅ 貓咪安全友善</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-between mb-4 px-2 text-xs sm:text-sm text-gray-600">
-      <div>顯示中的項目：<span id="filteredCount" class="font-bold text-gray-900">0</span> 個</div>
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500"></span> 致命/高危</span>
-        <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> 刺激/中毒</span>
-        <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-brand-500"></span> 安全可用</span>
-      </div>
-    </div>
-
-    <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"></div>
-
-    <div id="emptyState" class="hidden text-center py-16 bg-white rounded-3xl border border-warm-100 p-6">
-      <div class="w-16 h-16 bg-warm-100 rounded-full flex items-center justify-center mx-auto text-warm-500 mb-3 text-2xl">🐾</div>
-      <h3 class="text-lg font-bold text-gray-800 mb-1">搵唔到相關項目</h3>
-      <p class="text-sm text-gray-600 max-w-sm mx-auto mb-4">試下用其他關鍵字（例如：「精油」、「水仙」、「洋蔥」、「朱古力」）或者重設篩選條件。</p>
-      <button onclick="resetAllFilters()" class="px-4 py-2 bg-brand-500 text-white rounded-xl text-xs font-semibold hover:bg-brand-600 transition">重設所有條件</button>
-    </div>
+    </section>
   </main>
 
-  <!-- Mini Audit Modal -->
-  <div id="auditModal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-warm-100 max-h-[90vh] overflow-y-auto custom-scrollbar">
-      <div class="flex items-center justify-between mb-4">
-        <div class="flex items-center gap-2"><span class="text-2xl">🏠</span><h3 class="text-lg font-bold text-gray-900">貓咪家居安全 1 分鐘自測</h3></div>
-        <button onclick="toggleAuditModal()" class="text-gray-400 hover:text-gray-600 p-1 rounded-full hover:bg-gray-100"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
-      </div>
-
-      <p class="text-xs sm:text-sm text-gray-600 mb-4">勾選你屋企現時正存放、使用或容易讓貓咪接觸的物品，即時評估潛在風險：</p>
-
-      <form id="auditForm" class="space-y-2.5 text-xs sm:text-sm">
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="bleach" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>用傳統 1:99 漂白水或滴露拖地</span></label>
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="diffuser" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>客廳經常開茶樹 / 尤加利 / 柑橘精油香薰機</span></label>
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="humanFood" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>會讓貓咪試食人類餸菜、湯汁、朱古力、牛奶或餐桌零食</span></label>
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="kitchenAccess" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>廚餘桶、洋蔥蒜頭、葡萄乾、咖啡或酒精飲品容易被貓咪接觸</span></label>
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="lilies" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>節日擺放年花（如水仙花、百合花、富貴竹）</span></label>
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="perfume" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>使用含強烈人工香精的衣物柔順劑或地板清潔劑</span></label>
-        <label class="flex items-center gap-3 p-3 rounded-xl bg-warm-50 border border-warm-100 hover:bg-warm-100/70 cursor-pointer transition"><input type="checkbox" name="auditItem" value="pothos" class="rounded text-brand-600 focus:ring-brand-500 h-4 w-4"><span>種植綠蘿（黃金葛）、萬年青或蘆薈等觀葉盆栽</span></label>
-      </form>
-
-      <div id="auditResult" class="mt-5 p-4 rounded-2xl hidden"></div>
-      <div class="mt-6 flex gap-3"><button onclick="calculateAuditScore()" class="flex-1 py-2.5 bg-brand-500 hover:bg-brand-600 text-white rounded-xl text-sm font-semibold transition">立即計算風險等級</button></div>
-    </div>
-  </div>
-
-  <!-- Detail Modal -->
-  <div id="detailModal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-warm-100 max-h-[90vh] overflow-y-auto custom-scrollbar relative">
-      <button onclick="closeDetailModal()" class="absolute right-5 top-5 text-gray-400 hover:text-gray-600 p-1.5 rounded-full hover:bg-warm-100 transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-
-  <!-- Long-life / safety content -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-    <div class="bg-gradient-to-br from-brand-50 to-warm-100 rounded-3xl p-6 sm:p-10 border border-brand-200/60 shadow-sm">
-      <div class="mb-7 max-w-3xl">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/70 border border-brand-100 text-brand-700 text-xs font-bold mb-3"><span>🐾 貓咪居家避雷 × 長壽生活守則</span></div>
-        <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 mb-2">讓貓長壽，不只靠食得好，更靠住得安心</h3>
-        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">安全清潔、低刺激氣味、穩定作息與被尊重的生活空間，都是貓咪長壽的重要基礎。當主子不用天天承受刺鼻化學物、陌生氣味或環境壓力，牠會更願意休息、進食、玩耍和親近你；很多亂尿、躲藏、過度舔毛與易怒行為，也可能與壓力及環境刺激有關。</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-        <div class="flex items-start gap-4">
-          <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-brand-500 shrink-0 text-xl font-bold">🧼</div>
-          <div><h4 class="text-base font-bold text-gray-900 mb-1">安全清潔，是長壽的日常防線</h4><p class="text-xs sm:text-sm text-gray-600 leading-relaxed">貓咪每天會踩地、梳毛和舔腳掌。若地板殘留漂白水、季銨鹽、酚類消毒劑或強烈香精，便可能經肉墊接觸、呼吸或舔毛進入身體。選擇低刺激、無香精、避開高風險成分的清潔方法，並讓表面完全乾透，等於每天替肝臟、腎臟與呼吸道減少不必要負擔。</p></div>
-        </div>
-        <div class="flex items-start gap-4">
-          <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-brand-500 shrink-0 text-xl font-bold">🤍</div>
-          <div><h4 class="text-base font-bold text-gray-900 mb-1">保留熟悉氣味，更容易親近主人</h4><p class="text-xs sm:text-sm text-gray-600 leading-relaxed">貓咪主要靠氣味理解「這裡是否安全」。過度濃烈的香薰、噴霧與清潔劑，會掩蓋牠熟悉的生活氣味，令部分貓咪感到不安或逃避互動。保持空間氣味溫和、固定餵食與遊玩節奏，再配合溫柔主動互動，能讓主子更願意靠近、蹭你及建立信任。</p></div>
-        </div>
-        <div class="flex items-start gap-4">
-          <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-brand-500 shrink-0 text-xl font-bold">🐾</div>
-          <div><h4 class="text-base font-bold text-gray-900 mb-1">減少壓力，有助改善行為問題</h4><p class="text-xs sm:text-sm text-gray-600 leading-relaxed">亂尿、抓咬、躲藏、半夜嚎叫、過度舔毛或突然脾氣差，不一定只是「曳」；可能是身體不適、資源不足、壓力累積或環境刺激的訊號。提供安靜躲藏位、垂直活動空間、抓板、每日遊戲和足夠水碗／貓砂盆，再減少刺激性氣味，才能真正改善貓咪身心狀態。</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section id="cta-section" class="max-w-6xl mx-auto px-4 sm:px-6 py-10 mb-8">
-    <div class="bg-gradient-to-r from-[#1f3c1b] to-[#8bc34a] rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden text-center sm:text-left">
-      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
-      <div class="absolute right-10 top-10 text-8xl opacity-10 select-none hidden lg:block">🐾</div>
-      <div class="max-w-2xl relative z-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-semibold mb-4 backdrop-blur-sm"><span>🌿 安心守護 • 質素保證</span></div>
-        <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-3 leading-snug">想主子健康長壽，<br class="sm:hidden">由建立一個低毒、低壓、安心的家開始！</h3>
-        <p class="text-sm sm:text-base text-white/90 mb-8 leading-relaxed">避開有毒植物、人類禁忌食物、危險精油與刺激性清潔劑；再配合無香精、低刺激的日常清潔、穩定互動和安全活動空間，讓主子更願意食、玩、瞓，也更自在地親近你。</p>
-        <div class="flex flex-col sm:flex-row items-center gap-4">
-          <a href="https://greenstore.hk/zh/collections/natural-cleaner?utm_source=instagram&utm_medium=social&utm_campaign=reels_toxic_things&utm_content=cat_safety_guide" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-white text-[#1f3c1b] font-bold text-base shadow-lg hover:bg-warm-50 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"><span>選購貓咪友善天然清潔劑</span><svg class="w-5 h-5 text-[#1f3c1b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
-          <div class="text-xs text-white/85 flex items-center gap-4 mt-2 sm:mt-0"><span class="flex items-center gap-1">✓ 香港現貨速遞</span><span class="flex items-center gap-1">✓ 環保無毒配方</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-white border-t border-warm-100 py-8 px-4 text-center text-xs text-gray-600">
-    <div class="max-w-4xl mx-auto space-y-3">
-      <p class="font-medium text-gray-700">GreenSTORE HK 致力推動健康、環保與毛孩友善的綠色家居生活。</p>
-      <p class="text-gray-600 max-w-2xl mx-auto">免責聲明：本圖鑑資料僅供日常養寵科普參考，不能替代專業獸醫診斷。若發現貓咪出現精神萎靡、嘔吐、腹瀉、抽搐或呼吸困難等異常症狀，請即時求醫。</p>
-      <p class="text-gray-400 pt-2">© 2026 greenstore.hk. All Rights Reserved.</p>
-    </div>
+  <footer class="border-t border-slate-100 bg-white px-4 py-8 text-center text-xs leading-6 text-slate-500">
+    <p class="font-semibold text-slate-600">GreenSTORE HK × Moolilagang 貓咪家居安全提示</p>
+    <p class="mx-auto mt-2 max-w-3xl">本頁內容供一般家居清潔及寵物安全教育參考，並非獸醫診斷或醫療建議。請閱讀產品標籤與產品頁完整指示；若貓咪誤食、接觸未乾表面或出現不適，請立即向獸醫求助。</p>
+    <p class="mt-2">© 2026 GreenSTORE HK. All Rights Reserved.</p>
   </footer>
 
-  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-gray-900 text-white text-xs sm:text-sm px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2"><span id="toastIcon">✨</span><span id="toastMsg">已完成操作</span></div>
-
   <script>
-    const itemsData = [
-      // Plants
-      {id:'p1',category:'plant',name:'百合花系列',alias:'Lilies (如香水百合、復活節百合、金針花)',icon:'🪴',danger:'fatal',dangerLabel:'🚨 致命級 (極度危險)',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'全株包括花瓣、花葉、花粉、浸花的水',symptoms:'劇烈嘔吐、流口水、精神萎靡、急性腎衰竭、無尿，死亡率極高',whyDangerous:'百合花全株均含強烈水溶性毒素，貓咪只需舔食微量花粉或飲用花瓶水，便可在 24-72 小時內引致不可逆轉的急性腎功能衰竭。',safeSolution:'屋企絕對嚴禁擺放任何百合科植物！過年可改擺貓咪安全的非洲紫羅蘭（African Violet）或蝴蝶蘭（Phalaenopsis Orchid）。'},
-      {id:'p2',category:'plant',name:'水仙花',alias:'Daffodil / Narcissus (香港過年必備年花)',icon:'🌼',danger:'high',dangerLabel:'⚠️ 高度危險',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'鱗莖（球根）毒性最高，花與葉亦有毒',symptoms:'劇烈嘔吐、腹痛、腹瀉、流口水、顫抖、抽搐、心律不齊、血壓急降',whyDangerous:'含有石蒜鹼（Lycorine）等多種生物鹼，對胃腸道有極強刺激性，過量攝入會影響中樞神經系統及心臟功能。',safeSolution:'過年期間切勿將水仙擺放在貓咪能跳及之處。若想增添節慶氣氛，可選用無毒的朱槿或波士頓腎蕨（Boston Fern）。'},
-      {id:'p3',category:'plant',name:'萬年青 / 黛粉葉',alias:'Dieffenbachia / Dumb Cane',icon:'🌿',danger:'high',dangerLabel:'⚠️ 中高風險',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'全株汁液',symptoms:'口腔灼痛、嘴唇咽喉嚴重腫脹、大量流口水、吞嚥困難、食道水腫致呼吸困難',whyDangerous:'含不溶性草酸鈣針狀結晶（Insoluble Calcium Oxalates）及蛋白水解酶，咀嚼時會刺穿口腔黏膜，引起劇烈灼痛及腫脹。',safeSolution:'室內綠化建議換成貓咪完全安全的吊蘭（Spider Plant）或椒草類（Peperomia）。'},
-      {id:'p4',category:'plant',name:'綠蘿 / 黃金葛',alias:"Pothos / Devil's Ivy",icon:'🌱',danger:'caution',dangerLabel:'⚡ 刺激性 / 避免接觸',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',toxicPart:'葉片與莖部',symptoms:'抓嘴巴、口腔紅腫灼熱、嘔吐、流口水、食慾不振',whyDangerous:'同樣含有草酸鈣晶體，貓咪咬食會引致口腔疼痛及消化道不適，雖然致命率較低，但極易引起食道發炎。',safeSolution:'可改種貓草（小麥草）、貓薄荷（Catnip）或馬拉巴栗（發財樹），給主子安心啃咬。'},
-      {id:'p5',category:'plant',name:'富貴竹 / 開運竹',alias:'Lucky Bamboo / Dracaena sanderiana',icon:'🎋',danger:'high',dangerLabel:'⚠️ 中高風險',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'全株、浸泡竹莖的水',symptoms:'瞳孔放大、嘔吐（可能帶血）、抑鬱、流口水、食慾不振、心跳加速',whyDangerous:'富貴竹屬於龍血樹屬，含有皂苷（Saponins）成分，對貓咪腸胃與神經有毒性作用。',safeSolution:'新春或辦公室擺設可改用散尾葵（Areca Palm）等貓狗無毒植物。'},
-      {id:'p6',category:'plant',name:'杜鵑花',alias:'Azalea / Rhododendron',icon:'🌺',danger:'fatal',dangerLabel:'🚨 致命級 (極度危險)',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'花朵、花葉及花蜜',symptoms:'持續嘔吐、拉肚子、血壓驟降、四肢無力、昏迷、心臟衰竭致死',whyDangerous:'含有梫木毒素（Grayanotoxin），會阻斷細胞鈉離子通道，破壞骨骼肌、心肌與神經功能，數片花葉即可致命。',safeSolution:'如家中有陽台花園，切勿種植杜鵑。選擇植物前，先確認其對貓咪的安全性。'},
-      {id:'p7',category:'plant',name:'鬱金香',alias:'Tulip',icon:'🌷',danger:'high',dangerLabel:'⚠️ 中高風險',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'球莖（根部）濃度最高',symptoms:'口腔潰爛、嚴重腹瀉、心律不整、呼吸短促、抽搐',whyDangerous:'含有鬱金香素 A/B（Tulipalin A & B），具過敏原性毒素，貓咪誤咬球莖會引起嚴重胃腸道與心血管毒性。',safeSolution:'切花建議選用玫瑰（需去刺）、向日葵或非洲菊（Gerbera Daisy）。'},
-      {id:'p8',category:'plant',name:'蘆薈',alias:'Aloe Vera',icon:'🪴',danger:'caution',dangerLabel:'⚡ 刺激性 / 避免接觸',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',toxicPart:'葉片皮下黃色汁液（蘆薈素）',symptoms:'腹瀉、嘔吐、尿液變紅（血紅素尿）、嗜睡、震顫',whyDangerous:'外層綠皮與皮下汁液含蘆薈素（Aloin）及蒽醌化合物，會刺激貓咪腸道劇烈蠕動引發下痢及脫水。',safeSolution:'如需保濕修護，請使用經獸醫認證的寵物專用產品，切勿直接摘新鮮蘆薈給貓用。'},
-
-      // Scents and essential oils
-      {id:'s1',category:'scent',name:'茶樹精油',alias:'Tea Tree Oil / Melaleuca',icon:'🌲',danger:'fatal',dangerLabel:'🚨 致命級 (極度危險)',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'高濃度純精油、擴香霧氣、含茶樹成分洗劑',symptoms:'步態不穩、肌肉震顫、體溫過低、後肢麻痺、昏迷、急性肝衰竭',whyDangerous:'富含萜烯（Terpenes），貓咪肝臟缺乏葡萄糖醛酸基轉移酶（UGT），無法將其轉化排出，極易在體內快速積累中毒。',safeSolution:'家中切勿使用茶樹精油擴香。日常抑菌消毒請改用食品級天然酵素或小蘇打配方。'},
-      {id:'s2',category:'scent',name:'柑橘類精油',alias:'Citrus Oil / Lemon / Orange / Bergamot',icon:'🍊',danger:'high',dangerLabel:'⚠️ 中高風險（肝毒性／神經刺激）',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'果皮精油、檸檬烯（D-Limonene）、芳樟醇',symptoms:'刺激氣道咳嗽、流涎、嘔吐、皮膚紅腫過敏及肝臟負擔',whyDangerous:'天然柑橘皮富含高濃度檸檬烯和芳樟醇，貓咪對濃縮精油的代謝能力有限，接觸或舔食可能造成風險。',safeSolution:'廚房清潔及去油洗碗宜選用無香精、低刺激的植物基配方，避免使用高濃度柑橘精油洗潔精。'},
-      {id:'s3',category:'scent',name:'尤加利 / 桉樹精油',alias:'Eucalyptus Oil',icon:'🌿',danger:'high',dangerLabel:'⚠️ 中高風險',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'精油、噴霧、香薰蠟燭',symptoms:'支氣管痙攣、咳嗽哮喘、過度流涎、腹瀉、精神呆滯',whyDangerous:'含有高濃度桉葉油醇（Eucalyptol），對貓咪呼吸道黏膜具刺激性，可誘發敏感貓咪的呼吸問題。',safeSolution:'若需淨化室內空氣，建議使用 HEPA 空氣清新機，而非透過燃點香薰蠟燭或噴灑精油。'},
-      {id:'s4',category:'scent',name:'薄荷 / 綠薄荷 / 冬青油',alias:'Peppermint / Wintergreen / Menthol',icon:'🍃',danger:'high',dangerLabel:'⚠️ 中高風險',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'薄荷醇（Menthol）、水楊酸甲酯',symptoms:'胃腸道潰瘍、嘔吐、呼吸困難、肝腎功能受損',whyDangerous:'注意：貓薄荷（Catnip）安全，但「薄荷精油」因含濃縮薄荷醇及水楊酸鹽，貓咪代謝慢，具有較高風險。',safeSolution:'為主子紓壓請認明新鮮或烘乾的「貓薄荷草（Nepeta cataria）」或「木天蓼」，避免使用人用薄荷精油。'},
-      {id:'s5',category:'scent',name:'薰衣草精油',alias:'Lavender Essential Oil',icon:'🌸',danger:'caution',dangerLabel:'⚡ 刺激性 / 慢性累積',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',toxicPart:'濃縮精油擴香、按摩油、衣物柔順劑',symptoms:'食慾不振、嗜睡、腸胃不適及可能的呼吸道刺激',whyDangerous:'薰衣草精油含芳樟醇與乙酸芳樟酯；濃縮精油在密閉空間擴散，可能增加貓咪的代謝與呼吸負擔。',safeSolution:'衣物清洗建議選擇無添加人造香精及精油的低敏洗衣液。'},
-      {id:'s6',category:'scent',name:'樟樹 / 樟腦 / 臭丸',alias:'Camphor / Mothballs',icon:'⚪',danger:'fatal',dangerLabel:'🚨 致命級（急性神經中毒）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'樟腦丸、臭丸、白樹油、樟樹精油',symptoms:'興奮不安、嘔吐、心律失常、抽搐、呼吸抑制及昏迷',whyDangerous:'樟腦與部分防蟲丸成分可經皮膚和呼吸道吸收；貓咪體型小且對相關化學物敏感，誤食或吸入均有嚴重風險。',safeSolution:'衣櫃不要擺放任何樟腦丸或臭丸。防潮可選用妥善收納的乾燥劑，防蟲則優先採用物理密封方式。'},
-
-      // Cleaning ingredients
-      {id:'c1',category:'cleaner',name:'漂白水 / 次氯酸鈉',alias:'Sodium Hypochlorite (傳統 1:99 消毒水)',icon:'🧪',danger:'fatal',dangerLabel:'🚨 極高風險（腐蝕／中毒）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',commonBrands:'高樂氏 (Clorox)、藍威寶漂白水、各大超市傳統 1:99 家居漂白水',toxicPart:'原液、未徹底乾透的地板殘留、揮發氯氣',symptoms:'踩踏後肉墊潰爛紅腫、舔毛灼傷食道及胃壁、持續嘔吐、呼吸道刺激',whyDangerous:'強鹼性及強氧化性腐蝕物，原液、未乾表面和揮發氣體均可刺激皮膚、眼睛和呼吸道。',safeSolution:'日常地板清潔推薦使用低刺激的寵物友善清潔液；如必須消毒，先讓貓完全離開區域，按標示稀釋、充分通風並待表面徹底乾透。'},
-      {id:'c2',category:'cleaner',name:'苯扎氯銨（季銨鹽 / BKC）',alias:'Benzalkonium Chloride / QUATs',icon:'🧴',danger:'fatal',dangerLabel:'🚨 高危（口腔化學灼傷）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',commonBrands:'傳統殺菌噴霧、各類標榜 99.9% 消毒濕紙巾、威露士消毒噴霧、部分多用途清潔劑',toxicPart:'消毒噴霧、除菌濕紙巾、地板消毒劑',symptoms:'口腔疼痛、流口水、舌頭潰瘍、吞嚥困難、嘔吐及精神不振',whyDangerous:'季銨鹽可造成黏膜與皮膚刺激；貓咪走過尚有殘留的表面後舔爪，便可能增加接觸機會。',safeSolution:'選擇清楚列明成分、低刺激且適合有寵物家庭的產品。任何清潔劑均應依說明使用，並待清潔表面完全乾透才讓貓咪進入。'},
-      {id:'c3',category:'cleaner',name:'酚類化合物 / 氯二甲酚（PCMX）',alias:'Phenol / Cresol / Chloroxylenol (PCMX)',icon:'🧫',danger:'fatal',dangerLabel:'🚨 致命級（皮膚吸收風險）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',commonBrands:'滴露（Dettol 消毒藥水）、傳統消毒液及部分煤焦油類清潔產品',toxicPart:'濃縮消毒液、防腐除臭劑、洗地稀釋水',symptoms:'皮膚刺激、流口水、嘔吐、震顫、抽搐及肝腎負擔',whyDangerous:'酚類化合物具脂溶性，可經口腔或皮膚接觸吸收；貓咪對這類物質的代謝能力較有限。',safeSolution:'避免在貓咪可接觸的地面和物品使用含酚類或 PCMX 的產品，改用清楚標示成分的低刺激清潔用品。'},
-      {id:'c4',category:'cleaner',name:'阿摩尼亞 / 氨水',alias:'Ammonia (常見於玻璃水、焗爐去油劑)',icon:'🪟',danger:'caution',dangerLabel:'⚡ 刺激性 / 誘發亂尿',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',commonBrands:'部分玻璃水、強力去油劑及焗爐清潔劑',toxicPart:'刺鼻氣體、噴霧水霧',symptoms:'眼睛流淚刺痛、打噴嚏、氣管炎；氣味與貓尿相似，可能誘發貓咪在該處重覆標記',whyDangerous:'氨氣是強烈刺激物，會影響呼吸道與眼睛；其氣味亦可能干擾貓咪的氣味辨識。',safeSolution:'清潔玻璃與油污可選用清楚標示成分的低氣味產品，操作時保持通風並讓貓遠離清潔區。'},
-      {id:'c5',category:'cleaner',name:'人工合成香精 / 鄰苯二甲酸酯',alias:'Synthetic Fragrances & Phthalates',icon:'🫧',danger:'caution',dangerLabel:'⚡ 慢性刺激 / 避免接觸',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',commonBrands:'香氛洗地水、衣物柔順劑、持久芳香噴霧及部分空氣清新劑',toxicPart:'香氛洗地水、衣物柔軟精、空氣清新劑',symptoms:'慢性過敏、過度舔毛、氣喘樣症狀、皮膚刺激及腸胃不適',whyDangerous:'濃烈或持久香氛可能對嗅覺敏感的貓造成壓力，也可能增加呼吸道刺激與接觸風險。',safeSolution:'轉用標明「無香精（Fragrance-Free）」或低敏、成分透明的清潔產品，並避免在貓常待的位置噴灑香氛。'},
-
-      // Foods and drinks cats must not eat
-      {id:'f1',category:'food',name:'洋蔥、蒜頭、蔥、韭菜及蔥屬調味料',alias:'Onion / Garlic / Chives / Leeks / Allium family',icon:'🧅',danger:'fatal',dangerLabel:'🚨 致命級（溶血性貧血）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'生熟洋蔥、蒜頭、蒜蓉、洋蔥粉、蒜粉、湯底、醬汁、調味肉類及人類剩餸',symptoms:'嘔吐、腹瀉、精神萎靡、牙齦蒼白、呼吸急促、心跳加快、血尿、虛弱甚至昏倒',whyDangerous:'蔥屬植物含氧化性硫化物，可破壞貓咪紅血球並形成海恩茲小體，導致溶血性貧血。煮熟、乾燥、粉末或濃縮調味形式同樣存在風險。',safeSolution:'所有人類餸菜、湯、肉汁、火鍋湯底及加工零食都不應直接餵貓。想獎勵主子，請選擇成分單純、獸醫建議的貓用零食。'},
-      {id:'f2',category:'food',name:'朱古力、可可及咖啡因飲品',alias:'Chocolate / Cocoa / Coffee / Tea / Energy Drinks',icon:'🍫',danger:'fatal',dangerLabel:'🚨 高危（心臟及神經毒性）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'黑朱古力、烘焙朱古力、可可粉、朱古力蛋糕、咖啡、奶茶、茶、能量飲品及咖啡渣',symptoms:'嘔吐、腹瀉、異常亢奮、心跳急速、口渴、顫抖、步態不穩、抽搐及心律不整',whyDangerous:'朱古力、可可、咖啡及茶所含的可可鹼與咖啡因，屬甲基黃嘌呤類物質。貓咪體型小，少量高濃度產品已可對神經系統及心臟造成嚴重刺激。',safeSolution:'咖啡、奶茶、可可、朱古力甜品及能量飲品應隨手收好；打翻飲品要即時抹乾，避免貓咪舔地板、杯蓋或吸管。'},
-      {id:'f3',category:'food',name:'酒精、含酒甜品及發酵飲品',alias:'Alcohol / Beer / Wine / Spirits / Fermented Drinks',icon:'🍷',danger:'fatal',dangerLabel:'🚨 致命級（急性酒精中毒）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'啤酒、紅白酒、烈酒、雞尾酒、酒心朱古力、含酒甜品、發酵麵糰及含酒精漱口水',symptoms:'嘔吐、協調失調、嗜睡、體溫下降、呼吸困難、昏迷、抽搐及器官衰竭',whyDangerous:'乙醇會抑制中樞神經系統；相對於人體，貓咪只需少量便可能出現嚴重中毒。發酵麵糰亦會在胃內持續產生酒精與氣體，風險更高。',safeSolution:'聚會時不要讓貓舔杯底、酒漬或含酒醬汁；酒精、消毒酒精與漱口水須放於櫃內，並立即清理地上的液體。'},
-      {id:'f4',category:'food',name:'木糖醇及無糖食品',alias:'Xylitol / Sugar-Free Gum / Candy / Toothpaste',icon:'🍬',danger:'fatal',dangerLabel:'🚨 高危（低血糖／肝臟風險）',dangerBadgeColor:'bg-red-100 text-red-700 border-red-200',toxicPart:'無糖香口膠、薄荷糖、糖果、烘焙食品、部分花生醬、止咳糖、牙膏及漱口水',symptoms:'嘔吐、虛弱、嗜睡、失去協調、顫抖、抽搐、昏倒及肝功能異常',whyDangerous:'木糖醇是常見代糖，存在於許多標示「無糖」或「低糖」的日用品及零食中。產品配方差異很大，貓咪誤食時不應自行估算安全劑量。',safeSolution:'不要讓貓接觸手袋、口袋或桌面上的香口膠與糖果；購買人用牙膏、花生醬及零食時，仔細查看成分表中的 xylitol 或 木糖醇。'},
-      {id:'f5',category:'food',name:'葡萄、提子乾及醋栗',alias:'Grapes / Raisins / Currants',icon:'🍇',danger:'high',dangerLabel:'⚠️ 高風險（腎臟損傷）',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'新鮮葡萄、提子乾、醋栗、果仁麵包、葡萄乾曲奇、穀物棒及節日糕點',symptoms:'嘔吐、腹瀉、拒食、腹痛、精神沉鬱、飲水或排尿量異常，以及急性腎功能問題',whyDangerous:'葡萄及提子乾的確切毒性機制仍未完全釐清，但動物中毒個案與腎損傷有明確關聯。由於個體反應不可預測，最安全做法是完全避免餵食。',safeSolution:'不要以水果作為貓咪零食；節日糕點、葡萄乾麵包、燕麥棒及小朋友零食應放入密封盒或上鎖櫃內。'},
-      {id:'f6',category:'food',name:'牛奶、忌廉及高乳糖乳製品',alias:'Milk / Cream / Ice Cream / High-Lactose Dairy',icon:'🥛',danger:'caution',dangerLabel:'⚡ 不宜餵食（腸胃不適）',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',toxicPart:'牛奶、煉奶、忌廉、雪糕、奶昔、芝士醬及高乳糖甜品',symptoms:'軟便、腹瀉、腹脹、放屁、嘔吐及腸胃不適',whyDangerous:'許多成年貓咪乳糖酶不足，不能有效分解牛奶中的乳糖。雖然未必屬典型急性毒物，但長期或大量餵食會導致腸胃不適、脫水及排便問題。',safeSolution:'飲水應是日常唯一飲品。若希望增加喝水量，可使用流動飲水機、濕糧加水，或選擇不含乳糖且專為貓設計的產品。'},
-      {id:'f7',category:'food',name:'骨頭、魚刺、生肉及未熟雞蛋',alias:'Cooked Bones / Fish Bones / Raw Meat / Raw Eggs',icon:'🍗',danger:'high',dangerLabel:'⚠️ 高風險（哽塞／腸胃感染）',dangerBadgeColor:'bg-amber-100 text-amber-700 border-amber-200',toxicPart:'熟雞骨、魚骨、叉燒骨、燒肉骨、生肉、生內臟、未熟蛋液及受污染廚餘',symptoms:'哽塞、咳嗽、流口水、吞嚥困難、嘔吐、腹痛、腹瀉、便血及食慾下降',whyDangerous:'熟骨容易碎裂成尖刺，可能刺傷口腔、食道或腸道；生食與未熟蛋則可能帶有細菌污染風險。',safeSolution:'不要餵食餐桌剩菜或啃骨；煮食後立即清理骨頭和魚刺，並使用有蓋垃圾桶，避免主子翻找廚餘。'},
-      {id:'f8',category:'food',name:'高鹽零食、湯汁及加工人類食品',alias:'Salty Snacks / Processed Foods / Soup / Gravy',icon:'🍜',danger:'caution',dangerLabel:'⚡ 不宜常餵（腎臟及腸胃負擔）',dangerBadgeColor:'bg-orange-100 text-orange-700 border-orange-200',toxicPart:'即食麵湯、火鍋湯底、薯片、臘腸、午餐肉、鹹魚、醬汁、罐頭人類食品及調味肉類',symptoms:'異常口渴、嘔吐、腹瀉、精神不振、排尿改變及腸胃不適',whyDangerous:'人類加工食品通常同時含高鹽、油脂、洋蔥蒜類調味及食品添加物。即使沒有立即中毒，長期餵食亦會擾亂貓咪營養平衡。',safeSolution:'將「人食」與「貓食」清楚分開。主子的主食應以營養完整的貓糧為核心，零食則控制份量並選擇專為貓設計的產品。'},
-
-      // Safer alternatives
-      {id:'sf1',category:'safe',name:'食用級清潔成分',alias:'Food-grade Cleaning Ingredients (如食用級小蘇打、碳酸氫鈉)',icon:'✨',danger:'safe',dangerLabel:'✅ 貓咪安全友善 • 正確使用',dangerBadgeColor:'bg-emerald-100 text-emerald-700 border-emerald-200',certifications:'注意：即使是溫和成分，也應按產品說明稀釋、避免大量舔食並妥善收納。',toxicPart:'適合日常清潔的溫和配方',symptoms:'日常清潔用量下相對低刺激，可協助吸附異味與分解油脂',whyDangerous:'選擇成分透明、低氣味、可充分沖洗的產品，有助減少家居化學殘留與不必要接觸。',safeSolution:'可用於日常輕度去污與除味；請避免讓貓直接接觸清潔粉末或濃縮原液。'},
-      {id:'sf2',category:'safe',name:'天然酵素清潔液',alias:'Enzyme Cleaner (生物活性蛋白分解酶)',icon:'🌿',danger:'safe',dangerLabel:'✅ 貓咪安全友善 • 生物降解',dangerBadgeColor:'bg-emerald-100 text-emerald-700 border-emerald-200',certifications:'選擇無強烈香精、成分清楚並遵循使用說明的配方。',toxicPart:'天然微生物酵素',symptoms:'可從根源分解貓尿中的尿酸結晶與蛋白質，減少以香味掩蓋異味',whyDangerous:'酵素型清潔方式以分解污漬為目標，適合處理貓尿、嘔吐物與有機污漬。',safeSolution:'清理貓砂盆周邊及地毯污漬後，保持通風並待表面乾透，避免貓咪立即踩踏或舔食。'},
-      {id:'sf3',category:'safe',name:'植物葡萄糖苷（APG）',alias:'Alkyl Polyglucoside (玉米/椰子來源表面活性劑)',icon:'🥥',danger:'safe',dangerLabel:'✅ 貓咪安全友善 • 低敏溫和',dangerBadgeColor:'bg-emerald-100 text-emerald-700 border-emerald-200',certifications:'建議配合無香精、低 VOC、成分透明的完整產品配方評估。',toxicPart:'植物來源、可生物降解的表面活性劑',symptoms:'性質溫和、不易造成刺激，具日常去油與清潔能力',whyDangerous:'APG 是常見於溫和清潔配方的表面活性劑；產品最終安全性仍取決於整體配方與正確使用方式。',safeSolution:'選擇無精油、無濃烈香精的配方，清潔後讓地板與物件完全乾燥，讓主子安心活動。'},
-      {id:'sf4',category:'safe',name:'稀釋食用級檸檬酸',alias:'Citric Acid (水垢/尿石清潔)',icon:'💧',danger:'safe',dangerLabel:'✅ 正確稀釋後可作家居清潔',dangerBadgeColor:'bg-emerald-100 text-emerald-700 border-emerald-200',certifications:'注意：避免與漂白水或其他清潔劑混合；使用後應以清水擦拭並待乾。',toxicPart:'食品級酸性粉末溶於水',symptoms:'適合處理水垢與部分尿石污漬；低氣味且不含柑橘精油',whyDangerous:'檸檬酸水溶液與柑橘精油不同，不含檸檬烯；但任何酸性清潔液仍須按建議濃度使用。',safeSolution:'適用於清洗貓砂盆與水龍頭水垢。清潔後以清水徹底沖洗、擦乾，再讓貓咪使用。'}
-    ];
-
-    let currentCategory = 'all';
-    let currentDanger = 'all';
-    let searchQuery = '';
-
-    document.addEventListener('DOMContentLoaded', () => {
-      updateCategoryCounts();
-      renderCards();
-    });
-
-    function updateCategoryCounts() {
-      const counts = {
-        all: itemsData.length,
-        plant: itemsData.filter(i => i.category === 'plant').length,
-        scent: itemsData.filter(i => i.category === 'scent').length,
-        cleaner: itemsData.filter(i => i.category === 'cleaner').length,
-        food: itemsData.filter(i => i.category === 'food').length,
-        safe: itemsData.filter(i => i.category === 'safe').length
-      };
-      Object.entries(counts).forEach(([key, value]) => {
-        document.getElementById(`count-${key}`).innerText = value;
-      });
+    function toggleFaq(button) {
+      const item = button.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
     }
-
-    function setCategory(category) {
-      currentCategory = category;
-      document.querySelectorAll('.filter-tab').forEach(button => {
-        button.className = button.getAttribute('data-cat') === category
-          ? 'filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition whitespace-nowrap bg-brand-500 text-white shadow-sm'
-          : 'filter-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium text-gray-600 hover:bg-warm-100 transition whitespace-nowrap';
-      });
-      renderCards();
-    }
-
-    function handleDangerChange(value) {
-      currentDanger = value;
-      renderCards();
-    }
-
-    function handleSearch(value) {
-      searchQuery = value.trim().toLowerCase();
-      document.getElementById('clearSearchBtn').classList.toggle('hidden', !searchQuery);
-      renderCards();
-    }
-
-    function clearSearch() {
-      document.getElementById('searchInput').value = '';
-      searchQuery = '';
-      document.getElementById('clearSearchBtn').classList.add('hidden');
-      renderCards();
-    }
-
-    function resetAllFilters() {
-      currentDanger = 'all';
-      searchQuery = '';
-      document.getElementById('searchInput').value = '';
-      document.getElementById('dangerFilter').value = 'all';
-      document.getElementById('clearSearchBtn').classList.add('hidden');
-      setCategory('all');
-    }
-
-    function renderCards() {
-      const grid = document.getElementById('cardsGrid');
-      const emptyState = document.getElementById('emptyState');
-      const filtered = itemsData.filter(item => {
-        const searchable = [item.name, item.alias, item.symptoms, item.toxicPart, item.commonBrands || '', item.whyDangerous, item.safeSolution].join(' ').toLowerCase();
-        const categoryMatch = currentCategory === 'all' || item.category === currentCategory;
-        const dangerMatch = currentDanger === 'all' || item.danger === currentDanger;
-        const searchMatch = !searchQuery || searchable.includes(searchQuery);
-        return categoryMatch && dangerMatch && searchMatch;
-      });
-
-      document.getElementById('filteredCount').innerText = filtered.length;
-      if (!filtered.length) {
-        grid.innerHTML = '';
-        emptyState.classList.remove('hidden');
-        return;
-      }
-
-      emptyState.classList.add('hidden');
-      grid.innerHTML = filtered.map(item => {
-        const isSafe = item.danger === 'safe';
-        return `
-          <div class="bg-white rounded-3xl p-5 sm:p-6 border border-warm-100 hover:border-brand-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-3.5">
-                <div class="flex items-center gap-2.5">
-                  <div class="w-12 h-12 rounded-2xl ${isSafe ? 'bg-emerald-50 text-emerald-600' : 'bg-warm-100 text-warm-600'} flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform">${item.icon}</div>
-                  <div>
-                    <h3 class="font-bold text-gray-900 text-base sm:text-lg leading-tight group-hover:text-brand-600 transition-colors">${item.name}</h3>
-                    <span class="text-xs text-gray-600 block line-clamp-1 font-normal">${item.alias}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-3.5"><span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border ${item.dangerBadgeColor}">${item.dangerLabel}</span></div>
-
-              ${item.commonBrands ? `<div class="mb-3 bg-red-50/90 border border-red-200 p-2.5 rounded-xl flex items-start gap-2"><span class="text-coral-600 text-xs shrink-0 mt-0.5">⚠️</span><div class="text-xs"><span class="font-bold text-red-800">常見含此成分產品：</span><span class="text-red-700 font-medium">${item.commonBrands}</span></div></div>` : ''}
-
-              ${item.certifications ? `<div class="mb-3 bg-emerald-50/80 border border-emerald-200 p-2.5 rounded-xl text-xs text-emerald-800 font-medium">${item.certifications}</div>` : ''}
-
-              <div class="space-y-2 text-xs text-gray-600 mb-4 bg-warm-50/60 p-3 rounded-2xl border border-warm-100">
-                <div class="flex items-start gap-1.5"><span class="font-bold text-gray-700 shrink-0">${isSafe ? '成分/形態：' : '主要毒源：'}</span><span class="text-gray-600 line-clamp-1">${item.toxicPart}</span></div>
-                <div class="flex items-start gap-1.5"><span class="font-bold ${isSafe ? 'text-brand-700' : 'text-coral-600'} shrink-0">${isSafe ? '安全特性：' : '中毒症狀：'}</span><span class="line-clamp-2 ${isSafe ? 'text-gray-700' : 'text-gray-800 font-medium'}">${item.symptoms}</span></div>
-              </div>
-            </div>
-
-            <button onclick="openDetailModal('${item.id}')" class="w-full py-2.5 px-3 rounded-xl bg-warm-100 hover:bg-brand-50 hover:text-brand-700 text-gray-700 text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors">
-              <span>查看詳細毒理及防護建議</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </button>
-          </div>
-        `;
-      }).join('');
-    }
-
-    function openDetailModal(itemId) {
-      const item = itemsData.find(entry => entry.id === itemId);
-      if (!item) return;
-
-      const isSafe = item.danger === 'safe';
-      // Food cards only use the revised CTA label; all other cards retain the cleaning CTA.
-      const detailCtaLabel = item.category === 'food'
-        ? '打造貓咪友善安心家居'
-        : '選購貓咪友善天然清潔劑';
-
-      document.getElementById('modalContent').innerHTML = `
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-14 h-14 rounded-2xl ${isSafe ? 'bg-emerald-50' : 'bg-warm-100'} flex items-center justify-center text-3xl">${item.icon}</div>
-          <div>
-            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border mb-1 ${item.dangerBadgeColor}">${item.dangerLabel}</span>
-            <h3 class="text-xl font-extrabold text-gray-900">${item.name}</h3>
-            <p class="text-xs text-gray-600">${item.alias}</p>
-          </div>
-        </div>
-
-        <div class="space-y-4 text-xs sm:text-sm text-gray-700">
-          ${item.commonBrands ? `<div class="bg-red-50 border border-red-200 p-3.5 rounded-2xl"><span class="font-bold text-red-800 block mb-1">⚠️ 常見含有此成分之市售產品：</span><p class="text-red-700 font-semibold">${item.commonBrands}</p></div>` : ''}
-          ${item.certifications ? `<div class="bg-emerald-50 border border-emerald-200 p-3.5 rounded-2xl"><span class="font-bold text-emerald-800 block mb-1">🏅 使用注意事項：</span><p class="text-emerald-800">${item.certifications}</p></div>` : ''}
-          <div class="bg-warm-50 p-3.5 rounded-2xl border border-warm-100"><span class="font-bold text-gray-900 block mb-1">📍 ${isSafe ? '主要成分/形態' : '毒性位置與形態'}：</span><p class="text-gray-600">${item.toxicPart}</p></div>
-          <div class="${isSafe ? 'bg-emerald-50 border-emerald-100' : 'bg-red-50 border-red-100'} p-3.5 rounded-2xl border"><span class="font-bold ${isSafe ? 'text-emerald-800' : 'text-red-800'} block mb-1">🚨 ${isSafe ? '安全特性' : '可能的中毒反應'}：</span><p class="${isSafe ? 'text-emerald-700' : 'text-red-700'} leading-relaxed">${item.symptoms}</p></div>
-          <div><span class="font-bold text-gray-900 block mb-1">🔬 為何需要注意：</span><p class="text-gray-600 leading-relaxed text-xs sm:text-sm bg-gray-50 p-3.5 rounded-2xl border border-gray-100">${item.whyDangerous}</p></div>
-          <div class="bg-brand-50 p-3.5 rounded-2xl border border-brand-100"><span class="font-bold text-brand-800 block mb-1">💡 安全應對方案：</span><p class="text-brand-900 leading-relaxed text-xs sm:text-sm">${item.safeSolution}</p></div>
-        </div>
-
-        <div class="mt-6 pt-4 border-t border-warm-100 flex flex-col sm:flex-row items-center gap-3">
-          <a href="https://greenstore.hk/zh/collections/natural-cleaner?utm_source=instagram&utm_medium=social&utm_campaign=reels_toxic_things&utm_content=cat_safety_guide" target="_blank" rel="noopener noreferrer" class="w-full sm:flex-1 py-3 px-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
-            <span>${detailCtaLabel}</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </a>
-          <button onclick="copyItemSummary('${item.name}', '${item.dangerLabel}')" class="w-full sm:w-auto py-3 px-4 rounded-xl bg-warm-100 hover:bg-warm-200 text-gray-700 text-xs font-semibold transition">分享此卡片</button>
-        </div>
-      `;
-
-      document.getElementById('detailModal').classList.remove('hidden');
-    }
-
-    function closeDetailModal() {
-      document.getElementById('detailModal').classList.add('hidden');
-    }
-
-    function toggleAuditModal() {
-      const modal = document.getElementById('auditModal');
-      modal.classList.toggle('hidden');
-      document.getElementById('auditResult').classList.add('hidden');
-    }
-
-    function calculateAuditScore() {
-      const count = document.querySelectorAll('input[name="auditItem"]:checked').length;
-      const result = document.getElementById('auditResult');
-      result.classList.remove('hidden');
-
-      if (count === 0) {
-        result.className = 'mt-5 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs sm:text-sm';
-        result.innerHTML = '<div class="font-bold text-sm text-emerald-800 mb-1">🌟 評級：五星級安心貓居！</div><p>太棒了！你屋企沒有常見的高危毒源。繼續保持低刺激清潔、妥善收納食物與提供穩定生活空間。</p>';
-      } else if (count <= 2) {
-        result.className = 'mt-5 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm';
-        result.innerHTML = `<div class="font-bold text-sm text-amber-800 mb-1">⚠️ 評級：中度風險（發現 ${count} 個潛在風險）</div><p>屋企有少數物品可能威脅貓咪健康。建議優先收好人類食物與危險用品，並改用低刺激、無香精的日常清潔方式。</p>`;
-      } else {
-        result.className = 'mt-5 p-4 rounded-2xl bg-red-50 border border-red-200 text-red-900 text-xs sm:text-sm';
-        result.innerHTML = `<div class="font-bold text-sm text-red-800 mb-1">🚨 評級：高危警報（發現 ${count} 個嚴重毒源）！</div><p>你屋企現時可能同時存在漂白水、精油、年花或人類禁忌食物風險。請即刻將有害物品移離貓咪活動範圍，並建立安全收納與低刺激清潔習慣。</p><a href="#cta-section" onclick="toggleAuditModal()" class="inline-block mt-3 px-3 py-1.5 bg-red-600 text-white rounded-lg font-bold text-xs">👉 查看天然清潔方案</a>`;
-      }
-    }
-
-    function copyItemSummary(name, danger) {
-      const text = `【貓奴避雷提醒】屋企有貓要注意！「${name}」對貓咪屬 ${danger}，日常切勿讓主子接觸或舔食！更多貓咪安全指南可參考 GreenSTORE HK。`;
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
-      } else {
-        fallbackCopy(text);
-      }
-      showToast('📋 已複製提醒內容，可直接貼上分享畀朋友！');
-    }
-
-    function fallbackCopy(text) {
-      const textarea = document.createElement('textarea');
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      textarea.remove();
-    }
-
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      document.getElementById('toastMsg').innerText = message;
-      toast.classList.remove('translate-y-20', 'opacity-0');
-      toast.classList.add('translate-y-0', 'opacity-100');
-      setTimeout(() => {
-        toast.classList.remove('translate-y-0', 'opacity-100');
-        toast.classList.add('translate-y-20', 'opacity-0');
-      }, 3000);
-    }
-
-    window.onclick = event => {
-      const detailModal = document.getElementById('detailModal');
-      const auditModal = document.getElementById('auditModal');
-      if (event.target === detailModal) closeDetailModal();
-      if (event.target === auditModal) toggleAuditModal();
-    };
   </script>
 </body>
 </html>
